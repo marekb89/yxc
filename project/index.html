@@ -14,9 +14,24 @@
 	</head>
 	<body ng-controller="mainController">
 
+	<div class="container">
+
+	<navbar ng-if="user.isLogged"></navbar>
+	<login ng-if="!user.isLogged"></login>
+
+
+
+	</div>
+
+
 	<script type="text/javascript" src="assets/js/angular.min.js"></script>
 	<script type="text/javascript" src="assets/js/ui-bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/app.js"></script>
+
+	<script type="text/javascript" src="assets/js/directives/navbar/navbar.js"></script>
+	<script type="text/javascript" src="assets/js/directives/login/login.js"></script>
+
+	<script type="text/javascript" src="assets/js/controllers/MainController.js"></script>
 
 	</body>
 </html>
